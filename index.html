@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<link href="css/cal.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+<div class="mainContainer" style="">
+
+<form name="myform">
+<input type="text" name="textview" placeholder="check your result" disabled />
+</form>
+<table>
+<tr>
+<td><input type="button" class="btn symbol" onclick="SR('r')" id="r" value="√" disabled /></td>
+<td><input type="button" class="btn symbol" onclick="SR('s')" id="s" value="×²" disabled /></td>
+
+<td><input type="button" class="btn symbol" onclick="SR('si')" id="si" value="sin" disabled /></td>
+
+<td><input type="button" class="btn symbol" onclick="back()" value="&larr;"/></td>
+<td><input type="button" class="btn symbol" onclick="insertOpt('/')" value="÷"/></td>
+</tr>
+<tr>
+<td><input type="button" class="btn number" onclick="insertNum(7)" value="7"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(8)" value="8"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(9)" value="9"/></td>
+<td><input type="button" class="btn symbol" onclick="insertOpt('*')"  value="×"/></td>
+</tr>
+<tr>
+<td><input type="button" class="btn number" onclick="insertNum(4)" value="4"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(5)" value="5"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(6)" value="6"/></td>
+<td><input type="button" class="btn symbol" onclick="insertOpt('-')" value="-"/></td>
+</tr>
+<tr>
+<td><input type="button" class="btn number" onclick="insertNum(1)" value="1"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(2)" value="2"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(3)" value="3"/></td>
+<td><input type="button" class="btn symbol" onclick="insertOpt('+')" value="+"/></td>
+</tr>
+<tr>
+<td><input type="button" class="btn symbol" onclick="clean()" value="C"/></td>
+<td><input type="button" class="btn number" onclick="insertNum(0)" value="0"/></td>
+<td><input type="button" class="btn symbol" onclick="insertDec()" value="."/></td>
+<td><input type="button" class="btn symbol" onclick="equalTo()" value="="/></td>
+</tr>
+</table>
+
+</div>
+<script src="js/cal.js" type="text/javascript"></script>
+</body>
+</html>
